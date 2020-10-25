@@ -47,7 +47,7 @@ header .main_bar ul li a {
 header .main_bar ul li .belanja {
     font-size: 18px;
 }
-header .main_bar a:hover {
+header .main_bar ul li a:hover {
     color: rgb(175, 175, 175);
 }
 
@@ -74,6 +74,7 @@ section .container-satu button{
     color: white;
     padding: 13px 70px;
     border-radius: 30px;
+    cursor: pointer;
 }
 section .container-dua{
     width: 600px;
@@ -108,11 +109,33 @@ section .container-dua .header2 h1 {
 
 /*second interface*/
 .second-interface {
+    height: 400px;
     display: flex;
-    margin: 40px 0;
-    justify-content: space-around;
+    margin: 40px 7px;
+    justify-content: center;
 }
 
 .second-interface .bar1, .bar2, .bar3 {
     width: 25%;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+}
+footer .awal, .kedua, .akhir {
+    margin: 3px auto;
+}
+footer a {
+    color: grey;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px;
+}
+footer .akhir p {
+    color: rgba(50, 50, 50, .5);
 }
