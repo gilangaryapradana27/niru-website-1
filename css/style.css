@@ -4,11 +4,15 @@
 }
 
 body {
-    background-image: url(https://www.hostinger.co.id/assets/images/index-2020/header/header-d47d673672.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Tampilan awal dari website sebelum di scroll*/
+.first-interface {
+    background-color: #653CE2;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0 0 7px 7px;
 }
 
 /* Bar Atas */
@@ -19,8 +23,8 @@ header .main_bar {
     display: flex;
     justify-content: space-between;
 } 
-header .main_bar .logo svg {
-    font-size: 25px;
+header .main_bar .logo {
+    font-family: 'Syne Tactile', cursive;
 }
 header .main_bar a {
     text-decoration: none;
@@ -72,11 +76,13 @@ section .container-satu button{
     border-radius: 30px;
 }
 section .container-dua{
-    margin-left: 200px;
-    padding: 200px 0;
-    padding-right: 400px;
+    width: 600px;
+    height: 550px;
+    padding-left: 200px;
+    margin-left: 90px;
     background-image: url(../img/icon-store.png);
     background-size: cover;
+    position: relative;
 }
 section .container-dua .header1 h2{
     background-color: #ff745c;
@@ -91,4 +97,22 @@ section .container-dua .header2 h1 {
     font-size: 50px;
     border-radius: 10px;
     color: rgb(51, 51, 51);
+}
+
+.harga-png {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+}
+/*Akhir dari first interface*/
+
+/*second interface*/
+.second-interface {
+    display: flex;
+    margin: 40px 0;
+    justify-content: space-around;
+}
+
+.second-interface .bar1, .bar2, .bar3 {
+    width: 25%;
 }
